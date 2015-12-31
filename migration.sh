@@ -11,7 +11,7 @@ java -cp lib/h2-$H2_SOURCE_VERSION.jar org.h2.tools.Script -url jdbc:h2:$GITBUCK
 java -cp lib/h2-$H2_TARGET_VERSION.jar org.h2.tools.RunScript -url jdbc:h2:$GITBUCKET_HOME/data_1.4.190 -user $H2_USER -password $H2_PASSWORD -script backup.sql
 
 mv $GITBUCKET_HOME/data.h2.db $GITBUCKET_HOME/data.h2.db_$H2_SOURCE_VERSION
-mv $GITBUCKET_HOME/data.trace.db $GITBUCKET_HOME/data.trace.H2_SOURCE_VERSION
+mv $GITBUCKET_HOME/data.trace.db $GITBUCKET_HOME/data.trace.db_$H2_SOURCE_VERSION
 
 mv $GITBUCKET_HOME/data_$H2_TARGET_VERSION.mv.db $GITBUCKET_HOME/data.mv.db
 
