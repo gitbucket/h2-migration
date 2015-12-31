@@ -2,7 +2,7 @@
 
 In GitBucket 3.10, we upgraded H2 to the recent version of H2 1.4.190. However it might cause a compatibility problem for data files. If you got database trouble by upgrading to GitBucket 3.10, you can migrate H2 data files using this tool.
 
-**Note:** This tool migrate from old data files to new data files but GitBucket 3.10 might break old data files in bootstrap. So you must backup data files before upgrading to GitBucket 3.10 and restore from old data files before running this tool.
+**Note:** This tool migrate from old data files to new data files but GitBucket 3.10 might break old data files in bootstrap. So you must backup data files (`~/.gitbucket/data.*.db`) before upgrading to GitBucket 3.10 and restore from old data files before running this tool.
 
 ## Usage
 
