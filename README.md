@@ -1,4 +1,4 @@
-# Migrate GitBucket data to the latest version of H2
+# GitBucket H2 database migration tool 
 
 In GitBucket 3.10, we upgraded H2 to the recent version of H2 1.4.190. However it might cause a compatibility problem for data files. If you got database trouble by upgrading to GitBucket 3.10, you can migrate H2 data files using this tool.
 
