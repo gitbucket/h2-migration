@@ -6,7 +6,7 @@ export H2_PASSWORD=sa
 export H2_SOURCE_VERSION=1.4.180
 export H2_TARGET_VERSION=1.4.190
 
-java -cp lib/h2-$H2_SOURCE_VERSION.jar org.h2.tools.Script -url jdbc:h2:$GITBUCKET_HOME/data -user $H2_USER -password $H2_PASSWORD
+java -cp lib/h2-$H2_SOURCE_VERSION.jar org.h2.tools.Script -url jdbc:h2:$GITBUCKET_HOME/data -user $H2_USER -password $H2_PASSWORD -script backup.sql
 
 java -cp lib/h2-$H2_TARGET_VERSION.jar org.h2.tools.RunScript -url jdbc:h2:$GITBUCKET_HOME/data_1.4.190 -user $H2_USER -password $H2_PASSWORD -script backup.sql
 
